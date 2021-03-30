@@ -26,6 +26,9 @@ function setup() {
   stand2 = new Stand(700,200,200,10);
  
   //level one
+  polygon = bodies.circle(50,200,20);
+  World.add(world,polygon);
+  slingshot = new Slingshot(this.polygon,{x:100,y:200});
   block1 = new Block(300,275,30,40);
   console.log(block1);
   block2 = new Block(330,275,30,40);
