@@ -63,7 +63,7 @@ function setup() {
  blocks9 = new Block(700,95,30,40);
 
  //polygon holder with slings
- polygon = Bodies.circle(50,200,20);
+polygon_img=loadImage("polygon.png"); 
  World.add(world,polygon);
  
  slingShot = new Slingshot(this.polygon,{x:100,y:200});
